@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Synthèse : HTML & CSS</title>
+
+  <!-- Mise en style CSS minimale -->
+  <style>
+    :root{
+      --accent: #6a5acd;
+      --muted: #666;
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --maxw: 900px;
+    }
+
+    body{
+      margin: 0;
+      font-family: "Arial", "Helvetica", sans-serif;
+      background: var(--bg);
+      color: #222;
+      line-height: 1.5;
+      display: flex;
+      justify-content: center;
+      padding: 30px 16px;
+    }
+
+    .page {
+      max-width: var(--maxw);
+      width: 100%;
+      background: transparent;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 2.1rem;
+    }
+
+    header h2 {
+      margin: 6px 0 0;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+    section.card {
+      background: var(--card);
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(20,20,50,0.06);
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    p.small {
+      color: var(--muted);
+      margin: 8px 0 0;
+      font-size: 0.95rem;
+    }
+
+    ul, ol {
+      margin: 10px 0 0 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width:600px){
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- En-tête : titre principal et sous-titre -->
+  <header>
+    <h1>Synthèse : HTML & CSS</h1>
+  </header>
+
+  <!-- Section 1 : Rôles et différences HTML / CSS -->
+  <section class="card">
+    <!-- commentaire expliquant le but de la section -->
+    <!-- Cette section présente le rôle de chaque langage -->
+    <h3>Rôles : HTML et CSS</h3>
+
+    <p><strong>HTML</strong> (HyperText Markup Language) structure le contenu : titres, paragraphes, images, liens, listes — c'est le squelette de la page.</p>
+    <p class="small">HTML = contenu / structure. Sans HTML il n’y a pas de page.</p>
+
+    <p><strong>CSS</strong> (Cascading Style Sheets) définit l'apparence : couleurs, polices, marges, alignements, mise en page.</p>
+    <p class="small">CSS = style / design. Sans CSS la page s’affiche mais sans mise en forme.</p>
+  </section>
+
+  <!-- Section 2 : Balisage vs Programmation -->
+  <section class="card">
+    <!-- commentaire : différence conceptuelle -->
+    <!-- On compare langage descriptif et langage qui exécute -->
+    <h3>Langage de balisage vs langage de programmation</h3>
+
+    <p><strong>Langages de balisage (HTML, CSS)</strong> : descriptifs — ils indiquent comment structurer et styliser l'affichage. Ils ne contiennent pas de logique (pas d'if, pas de boucles).</p>
+
+    <p><strong>Langages de programmation (Python, JavaScript...)</strong> : exécutent des instructions, permettent la logique, les calculs, les conditions et l'automatisation.</p>
+
+    <p class="small"><em>Résumé</em> : HTML/CSS décrivent ; Python/JS réalisent des actions.</p>
+  </section>
+
+  <!-- Section 3 : CMS -->
+  <section class="card">
+    <!-- commentaire : définition et usages -->
+    <h3>Qu'est-ce qu'un CMS ?</h3>
+
+    <p>Un CMS (Content Management System) permet de créer et gérer un site sans coder entièrement. Il offre une interface visuelle, des thèmes et des extensions.</p>
+
+    <p><strong>Exemples :</strong></p>
+    <ul>
+      <li>WordPress</li>
+      <li>Wix</li>
+      <li>Shopify</li>
+      <li>Drupal, Joomla</li>
+    </ul>
+
+    <p><strong>Avantages :</strong> facile à utiliser, rapide pour créer, pas forcément besoin de coder.</p>
+    <p><strong>Inconvénients :</strong> moins flexible, risque de lenteur si trop d’extensions, dépendance à la plateforme et problématiques de sécurité si mal configuré.</p>
+  </section>
+
+  <!-- Section 4 : Cycle de vie d'une application web -->
+  <section class="card">
+    <!-- commentaire : étapes principales -->
+    <h3>Cycle de vie d'une application web</h3>
+
+    <ol>
+      <li><strong>Idée / Besoin</strong> — définir le problème et les utilisateurs.</li>
+      <li><strong>Conception</strong> — maquettes, spécifications, choix techniques.</li>
+      <li><strong>Développement</strong> — front-end (HTML/CSS/JS) & back-end (serveur, DB).</li>
+      <li><strong>Tests</strong> — correction des bugs, compatibilité mobile, ergonomie.</li>
+      <li><strong>Mise en ligne</strong> — hébergement, déploiement, nom de domaine.</li>
+      <li><strong>Évolution & maintenance</strong> — nouvelles fonctions, corrections et mises à jour.</li>
+    </ol>
+
+    <p class="small">Un site continue d'évoluer après sa publication.</p>
+  </section>
+
+</div>
+
+</body>
+</html>
